@@ -1,0 +1,153 @@
+
+.conteudo_pagina {
+    /* display: flex;   */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: calc(100vh - 5rem);
+    padding: 1rem;
+    background-size: cover;
+    margin-top: 8rem;   
+  }
+  
+
+
+  .card_titulo{
+    padding: 8px;
+    background: #F4D9B2;
+    border-radius: 50px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 64px;
+    margin-bottom: 64px;
+    width: 575px;
+    height: 92px;
+  }
+  
+  .titulo{
+    text-align: center;
+    font-size: 64px;
+  }
+
+  .card_conteudo{
+    background: #D39844;
+    border-radius: 5px;
+    margin-bottom: 36px;
+    padding: 7px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+/* .card_componente{
+    display: flex;
+    width: 1124px;
+    height: 1158px;
+    flex-shrink: 0;
+} */
+
+.componente {
+    width: 506px;
+    height: 768px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+.componente{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  
+}
+
+.img_componente {
+    width: 140px;
+    height: auto;
+    flex-shrink: 0;
+}
+
+@media (max-width: 800px) {
+    .conteudo_pagina {   
+        flex-direction: column;   
+        margin-top: 1rem;   
+        flex: 2rem;
+        /* height: calc(100vh - 170rem); */
+    }
+
+    .card_titulo {
+      width: 293px;
+      height: 47px;
+    }
+    .titulo{
+      font-size: 32px;
+    }
+
+    /* .Componentes_1{
+        flex: 2;
+    }
+
+    .Componentes_2{
+        flex: 3;    
+    } */
+  }
+
+
+@media (min-width: 800px) {
+
+    
+
+    /* .Componentes_1{
+        display: none;
+    }
+
+    .Componentes_2{
+        display: none;
+    } */
+
+    /* .left{
+        flex-direction: column;
+    } */
+
+    .card_titulo{
+      margin: 4px 32px 50px 104px;
+    }
+  
+    .conteudo{
+        display: flex;
+        height: 100%;
+        margin: 8px;
+        margin-left: 106px;
+        margin-right: 106px;
+    }
+  
+    .card_conteudo{
+    /* grid-area: leftSide;  */
+    margin-left: 104px;
+    margin-right: 104px;
+    /* width: 788px; */
+    /* width: 1297px; */
+    min-height: auto;
+    padding: 19px;
+    }
+  
+    /* .box_img{
+      float: right  ;
+      margin-left: auto;
+    } */
+
+    .componente{
+        display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    width: 700px;
+    }
+    
+  }
+  @media (max-width: 515px) {
+    .componente{
+      display: grid;
+      grid-template-rows: repeat(1, 1fr);
+      grid-template-columns: repeat(1, 1fr);
+      gap: 1rem;
+      width: auto;
+    }
+  }

@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+
+ .conteudo_pagina {
+  display: flex;  
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 5rem);
+  padding: 1rem;
+  background-size: cover;
+  margin-top: 12rem;
+}
+
+.mobile{
+  padding-top: 22rem;
+}
+
+@media (max-width: 910px) {
+
+.desktop{
+    display: none;
+}
+
+}
+
+@media (min-width: 910px) {
+    
+    .mobile{
+        display: none;
+    }
+    
+    }
+
+
+
+.mobile{
+
+    .conteudo{
+        align-items: center;
+        justify-content: center;
+      }
+      
+      .card_titulo{
+        padding: 8px;
+        background: #F4D9B2;
+        border-radius: 50px;
+        /* width: 200px;
+        height: 47px; */
+      
+        align-items: center;
+        justify-content: center;
+      
+        margin-top: -20em;
+        margin-bottom: 41px;
+
+        margin-inline: 20px;
+        /* margin-left: 5px;
+        margin-right: 5px; */
+      }
+      
+      .titulo{
+        text-align: center;
+        font-size: 32px;
+        white-space: nowrap;
+      }
+      
+      .card_conteudo{
+        background: #D39844;
+        border-radius: 5px;
+        margin-bottom: 36px;
+        padding: 7px;
+        margin-inline: 20px;
+      }
+      .conteudo_principal_escrito_subtitulo{
+        text-align: center;
+        padding: 20px;
+        font-family: 'Young Serif', serif;
+      }
+      
+      .conteudo_secundario_paragrafo{
+        padding: 19px;
+      }
+      
+      .conteudo_principal_imagem{
+        border-radius: 6px;
+        /* box-shadow: 10px 5px 5px #D39844; */
+      }
+      
+      .box_img{
+        margin: 8px 36px 8px 36px ;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+      
+
+}
+
+
+
+.desktop {
+
+    .conteudo{
+        align-items: center;
+        justify-content: center;
+      }
+      
+      .card_titulo{
+        /* padding: 8px;
+        background: #F4D9B2;
+        border-radius: 50px; */
+        width: 276px;
+        height: 65px;
+      
+        align-items: center;
+        justify-content: center;
+      
+        margin-top: -17rem;
+        margin-bottom: 41px;
+        margin-left: auto;
+        margin-right: auto;
+    
+    
+      }
+
+      .card_titulo_arduino{
+        width: 276px;
+        height: 65px;
+
+        align-items: center;
+        justify-content: center;
+      
+        margin-top: -17rem;
+        margin-bottom: 41px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .card_titulo_bomba{
+        width: 410px;
+        height: 65px;
+
+        align-items: center;
+        justify-content: center;
+      
+        margin-top: -17rem;
+        margin-bottom: 41px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .card_titulo_buzzer{
+        width: 240px;
+        height: 65px;
+
+        align-items: center;
+        justify-content: center;
+      
+        margin-top: -17rem;
+        margin-bottom: 41px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .card_titulo_fonte12v{
+        width: 300px;
+        height: 65px;
+
+        align-items: center;
+        justify-content: center;
+      
+        margin-top: -17rem;
+        margin-bottom: 41px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .card_titulo_leds{
+        width: 190px;
+        height: 65px;
+
+        align-items: center;
+        justify-content: center;
+      
+        margin-top: -17rem;
+        margin-bottom: 41px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .card_titulo_bluetooth{
+        width: 480px;
+        height: 65px;
+
+        align-items: center;
+        justify-content: center;
+      
+        margin-top: -17rem;
+        margin-bottom: 41px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .card_titulo_rele{
+        width: 350px;
+        height: 65px;
+
+        align-items: center;
+        justify-content: center;
+      
+        margin-top: -17rem;
+        margin-bottom: 41px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .card_titulo_motor_servo{
+        width: 350px;
+        height: 65px;
+
+        align-items: center;
+        justify-content: center;
+      
+        margin-top: -17rem;
+        margin-bottom: 41px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .card_titulo_protoboards{
+        width: 350px;
+        height: 65px;
+
+        align-items: center;
+        justify-content: center;
+      
+        margin-top: -17rem;
+        margin-bottom: 41px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .card_titulo_sensor_de_peso{
+        width: 420px;
+        height: 65px;
+
+        align-items: center;
+        justify-content: center;
+      
+        margin-top: -17rem;
+        margin-bottom: 41px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    
+    
+
+      .titulo{
+        text-align: center;
+        font-size: 48px;
+        white-space: nowrap;  
+        padding: 8px;
+        background: #F4D9B2;
+        border-radius: 50px;
+         /* width: 276px;
+        height: 65px; */
+        /* margin-left: 605px;
+        margin-right: 605px; */
+      }
+
+      
+      
+      .conteudo.card_conteudo{
+        /* margin-left: 50%;
+        margin-right: 50%; */
+      }
+         
+      .card_conteudo{
+        background: #D39844;
+        border-radius: 5px;
+        margin-bottom: 36px;
+        padding: 7px;
+        /* width: 1200px; */
+        /* height: 415px; */
+        margin-left: 73px;
+        margin-right: 73px;
+        display: flex;
+      }
+      .conteudo_principal_escrito_subtitulo{
+        text-align: center;
+        padding: 20px;
+        font-family: 'Young Serif', serif;
+      }
+      
+      .conteudo_secundario_paragrafo{
+        /* padding: 19px; */
+        font-size: 24px;
+      }
+      
+      .conteudo_principal_imagem{
+        border-radius: 6px;
+        /* box-shadow: 10px 5px 5px #D39844; */
+      }
+      
+      .box_img{
+        margin: auto ;
+        align-items: center;
+        justify-content: center;
+        text-align: left;
+        width: 381px;
+        height: 381px;
+        margin-left: 33px;
+      }
+      
+      .card_texto{
+        /* width: 672px;
+        height: 330px; */
+        margin-top: 55px;
+        margin-left: 150px;
+        margin-right: 33px;
+        margin-bottom: 30px;
+      }
+
+}
+
+@media (max-width: 1100px) {
+    .desktop .conteudo_secundario_paragrafo{
+      font-size: 16px;
+    }
+    .desktop .card_conteudo{
+      margin-inline: 20px;
+    }
+  }
+
+  @media (max-width: 424px) {
+    .mobile .conteudo_principal_imagem{
+      height: auto;
+      width: 200px;
+    }
+  }

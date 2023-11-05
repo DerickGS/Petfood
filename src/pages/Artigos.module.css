@@ -1,0 +1,515 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+
+
+  
+.card_conteudo a {
+  color: rgb(76, 35, 143);
+
+}
+
+.card_conteudo a:hover{
+  color: rgb(5, 41, 244); 
+}
+
+@media (min-width: 660PX) {
+  .conteudo_pagina {
+    display: flex;  
+    align-items: center;
+    justify-content: center;
+    /* height: calc(100vh - 0.05rem); */
+    padding: 1rem;
+    background-size: cover;
+    margin-top: 32px;
+  }
+  
+  
+  .card_titulo{
+    padding: 8px;
+    background: #F4D9B2;
+    border-radius: 50px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 64px;
+    margin-bottom: 64px;
+    width: 183px;
+    height: 47px;
+  }
+  
+  .titulo{
+    text-align: center;
+    font-size: 32px;
+  }
+  
+  .card_conteudo{
+    background: #D39844;
+    border-radius: 5px;
+    margin-bottom: 36px;
+    padding: 7px;
+  }
+  
+  .card_conteudo p{
+    padding: 8px;
+  }
+  
+  .conteudo_principal_imagem{
+    border-radius: 6px;
+    box-shadow: 10px 5px 5px #D39844;
+  }
+  
+  .vidio{
+    /* margin: 36px ; */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .card_conteudo a {
+    color: rgb(76, 35, 143);
+  
+  }
+  
+  .card_conteudo a:hover{
+    color: rgb(5, 41, 244); 
+  }
+  
+  
+  
+  /*..............................*/
+  
+  
+  @media (min-width: 800px) {
+  
+    .card_titulo{
+      margin: 64px 32px 64px 32px;
+      width: 358px;
+      height: 92px;
+    }
+    .titulo{
+      font-size: 64px;  
+    }
+  
+    .conteudo{
+        display: flex;
+        height: 100%;
+        margin: 8px;
+    }
+  
+    .card_conteudo{
+    grid-area: leftSide; 
+    margin-right: 42px;
+    margin-left: 42px;
+    width: 688px;
+    height: 585px;
+    flex-shrink: 0;
+    }
+  
+    .box_img{
+      float: right  ;
+      margin-left: auto;
+    }
+    
+  }
+  
+  @media (max-width: 800px) {
+    .card_conteudo{
+      height: 600px;
+    }
+    /* .item{
+      width: 25px;
+      height: 25px;
+    }
+    .container {
+      position: relative;
+      padding: 15px;
+      max-width: 64px;
+      margin: 0 auto;
+    } */
+  }
+  /*..............................*/
+  /*@media (min-width: 800px) {
+    .mobile {
+      display: none;
+      
+    }
+  
+    .desktop {
+        display: flex;
+    }
+  }
+  
+  @media (max-width: 800px) {
+    .mobile {
+      display: flex;
+      
+    }
+  
+    .desktop {
+        display: none;
+    }
+  }
+  
+  .card_titulo_desktop {
+  width: 385px;
+  height: 71px;
+  flex-shrink: 0;
+  border-radius: 50px;
+  background: #F4D9B2;
+  text-align: center  ;
+  }
+  
+  .titulo_desktop{
+  text-align: center;
+  height: 100%;
+  width: 100% ;
+  font-size: 100%;
+  }*/
+  
+  .container {
+    position: relative;
+    padding: 15px;
+    max-width: 640px;
+    margin: 0 auto;
+  }
+  
+  .gallery_wrapper {
+    overflow-x: auto;
+    min-width: 560px;
+  }
+  
+  .arrow_left,
+  .arrow_right {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: auto;
+    bottom: 0;
+    font-size: 20px;
+    line-height: 250px;
+    width: 40px;
+    color: #fff;
+    transition: all 600ms ease-in-out;
+    background: linear-gradient(to left, transparent 0%, black 200%);
+    opacity: 0.1;
+    cursor: pointer;
+    border: none;
+  }
+  
+  .arrow_left:hover,
+  .arrow_right:hover {
+    opacity: 1;
+  }
+  
+  .arrow_right {
+    right: 0;
+    left: auto;
+    text-align: right;
+    background: linear-gradient(to right, transparent 0%, black 200%);
+  }
+  
+  
+  
+  .item {
+    width: 250px;
+    height: 250px;
+    flex-shrink: 0;
+    transition: all 600ms ease-in-out;
+    opacity: 0.5;
+  }
+  
+  .current_item {
+    opacity: 1;
+  }
+  
+  /* This is from w3schools */
+  /* 
+  https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .gallery_wrapper::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .gallery_wrapper {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+  
+  
+  .gallery {
+    display: flex;
+    flex-flow: row nowrap;
+    /* gap: 25px; */
+    margin-left: 14.5px;
+    margin-right: 14.5px;
+    aspect-ratio: 16 /9;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    overflow:hidden;
+    .vidio{
+      margin-left: 25px;
+      margin-right: 25px;
+      width: 581px;
+    }
+  }
+  
+  .slide_nav{
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    /* bottom: 1.25rem; */
+    /* left: 50%; */
+    transform: translateX(50%);
+    z-index: 1;
+  
+    margin-top: 2rem;
+    margin-left: 80px;
+    margin-right: 120px;
+  }
+  
+  .slide_nav a {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.75;
+    transition: opacity ease 250ms;
+  }
+  
+  .slide_nav a:hover {
+    opacity: 1;
+  }
+  .mobile{
+    display: none;
+  }
+}
+
+@media (max-width: 660px) {
+  .desktop {
+    display: none;
+  }
+
+  .conteudo_pagina {
+    display: flex;  
+    align-items: center;
+    justify-content: center;
+    /* height: calc(100vh - 0.05rem); */
+    padding: 1rem;
+    background-size: cover;
+    margin-top: 32px;
+  }
+  
+  
+  .card_titulo{
+    padding: 8px;
+    background: #F4D9B2;
+    border-radius: 50px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 64px;
+    margin-bottom: 64px;
+    width: 183px;
+    height: 47px;
+  }
+  
+  .titulo{
+    text-align: center;
+    font-size: 32px;
+  }
+  
+  .card_conteudo{
+    background: #D39844;
+    border-radius: 5px;
+    margin-bottom: 36px;
+    padding: 7px;
+    /* margin-inline: 20px; */
+  }
+  
+  .card_conteudo p{
+    padding: 8px;
+  }
+  
+  .conteudo_principal_imagem{
+    border-radius: 6px;
+    box-shadow: 10px 5px 5px #D39844;
+  }
+  
+  .vidio{
+    /* margin: 36px ; */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  iframe{
+    width: auto;
+    height: auto;
+  }
+  .container{
+    max-width: 540px;
+    /* width: auto; */
+  } 
+}
+@media (max-width: 560px) {
+
+  .container{
+    max-width: 440px;
+    /* width: auto; */
+  } 
+}
+
+@media (max-width: 460px) {
+
+  .container{
+    max-width: 340px;
+    /* width: auto; */
+  } 
+}
+
+@media (max-width: 375px) {
+
+  .card_conteudo p{
+    font-size: 10px;
+  } 
+}
+@media (max-width: 360px) {
+
+  .container{
+    max-width: 280px;
+    /* width: auto; */
+  } 
+}
+.container {
+  position: relative;
+  padding: 15px;
+  /* max-width: 440px; */
+  margin: 0 auto;
+}
+
+.gallery_wrapper {
+  overflow-x: auto;
+}
+
+.arrow_left,
+.arrow_right {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: auto;
+  bottom: 0;
+  font-size: 20px;
+  line-height: 250px;
+  width: 40px;
+  color: #fff;
+  transition: all 600ms ease-in-out;
+  background: linear-gradient(to left, transparent 0%, black 200%);
+  opacity: 0.1;
+  cursor: pointer;
+  border: none;
+}
+
+.arrow_left:hover,
+.arrow_right:hover {
+  opacity: 1;
+}
+
+.arrow_right {
+  right: 0;
+  left: auto;
+  text-align: right;
+  background: linear-gradient(to right, transparent 0%, black 200%);
+}
+
+.gallery {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 15px;
+}
+
+.item {
+  width: 250px;
+  height: 250px;
+  flex-shrink: 0;
+  transition: all 600ms ease-in-out;
+  opacity: 0.5;
+}
+
+.current-item {
+  opacity: 1;
+}
+
+/* This is from w3schools */
+/* 
+https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
+/* Hide scrollbar for Chrome, Safari and Opera */
+.gallery-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.gallery-wrapper {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+@media (min-width: 425px) {
+  .gallery_wrapper::-webkit-scrollbar {
+    width: 12px;             
+  }
+  
+  .gallery_wrapper::-webkit-scrollbar-track {
+    /* background: orange  ;      */
+    background: #F4D9B2;   
+    border-radius: 10px; 
+  }
+  
+  .gallery_wrapper::-webkit-scrollbar-thumb {
+    /* background-color: #F4D9B2;    */
+    background-color: #D39844;   
+    border-radius: 20px;    
+    /* border: 3px solid orange;  */
+    border: 3px solid #F4D9B2; 
+  }
+}
+
+
+.cyan {
+  background: cyan;
+}
+
+.deeppink {
+  background: deeppink;
+}
+
+.turquoise {
+  background: turquoise;
+}
+
+.darkblue {
+  background: darkblue;
+}
+
+.purple {
+  background: purple;
+}
+
+ .data_descr {
+  position: relative;
+  text-decoration: underline;
+  color: #00f;
+  cursor: help;
+}
+
+ .data_descr:hover::after {
+  content: "Mais informações..";
+  position: absolute;
+  left: 0;
+  top: 24px;
+  min-width: 100px;
+  border: 1px #aaaaaa solid;
+  border-radius: 10px;
+  background-color: #F4D9B2;
+  padding: 12px;
+  color: #000000;
+  font-size: 14px;
+  z-index: 1;
+}

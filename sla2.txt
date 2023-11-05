@@ -1,0 +1,464 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+
+.conteudo_pagina {
+  display: flex;  
+  align-items: center;
+  justify-content: center;
+  /* height: calc(100vh - 5rem); */
+  padding: 1rem;
+  background-size: cover;
+  margin-top: 8rem;
+  margin-bottom: 8px;
+}
+
+
+
+.conteudo{
+  align-items: center;
+  justify-content: center;
+}
+
+.card_titulo_1{
+  padding: 8px;
+  background: #F4D9B2;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 64px;
+  margin-bottom: 64px;
+}
+
+.card_titulo_2{
+  padding: 8px;
+  background: #F4D9B2;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 64px;
+  margin-bottom: 64px;
+}
+
+.titulo{
+  text-align: center;
+  font-size: 80px;
+}
+
+.card_conteudo_1{
+  background: #D39844;
+  border-radius: 5px;
+  margin-bottom: 36px;
+  /* padding: 7px; */
+  margin-right: auto;
+  margin-left: auto;
+  /* width: 418px;
+  height: 257px; */
+}
+
+.card_conteudo_2{
+  background: #D39844;
+  border-radius: 5px;
+  margin-bottom: 36px;
+  /* padding: 7px; */
+  margin-right: auto;
+  margin-left: auto;
+  /* width: 418px; */
+  /* height: 857px;  */
+}
+.conteudo_principal_escrito_subtitulo{
+  text-align: center;
+  padding: 20px;
+  font-family: 'Young Serif', serif;
+}
+
+.conteudo_secundario_paragrafo{
+  padding: 19px;
+}
+
+.conteudo_principal_imagem{
+  border-radius: 6px;
+  box-shadow: 10px 5px 5px #D39844;
+}
+
+.box_img{
+  margin: 8px 36px 8px 36px ;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  /*  */
+  /* width: 317px;
+  height: 280px; */
+}
+/*..............................*/
+
+@media (max-width: 800px) {
+  .conteudo_pagina{
+    margin-top: 8px;
+  }
+
+
+  .desktop{
+    display: none;
+  }
+  .card_titulo_1 {
+    display: none;
+    
+  }
+  .conteudo_pagina{
+  /* height: calc(100vh + 40rem); */
+  margin-bottom: 2rem;
+  }
+
+  .card_conteudo{
+  /* width: 418px; */
+  /* height: 257px;  */
+  padding-left: 8px;
+  padding-right: 8px;
+  }
+
+  .conteudo_principal_imagem{
+    width: 323px;
+  }
+
+  .card_titulo_2{
+    border-radius: 50px;
+    margin-left: 17px;
+  }
+
+  .card_titulo_2 .titulo{
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 800px) {
+  .mobile{
+    display: none;
+  }
+
+  .conteudo_pagina {
+    display: flex;  
+    align-items: center;
+    justify-content: center;
+    /* height: calc(100vh + 50rem);x' */
+    padding: 1rem;
+    background-size: cover;
+    margin-top: 8rem;
+    margin-bottom: 8px;
+  }
+  
+
+  .card_titulo_1{
+    margin: 85px 102px 189px 86px;
+    border-radius: 50px;
+    background: #F4D9B2;
+    width: 471px;
+    height: 110px;
+    align-items: center;
+  }
+
+  .card_titulo_1 .titulo{
+      font-size: 80px;
+  }
+
+  .card_titulo_2{
+    /* margin: 85px 133px 597px 81px; */
+    margin-top: 133px;
+    margin-bottom: 81px;
+    margin-left: 85px;
+    margin-right: 81px;
+    border-radius: 50px;
+    background: #F4D9B2;
+    width: 835px;
+    height: 92px;
+  }
+
+  .card_titulo_2 .titulo{
+    font-size: 64px;
+  }
+
+  .conteudo{
+      display: flex;
+      height: 100%;
+      margin: 8px;
+  }
+  .box_1{
+    margin-left: 43px;
+  }
+  .card_conteudo_1{
+  grid-area: leftSide; 
+  margin-right: 42px;
+  margin-left: 42px;
+  /* width: 888px; */
+  /* height: 885px; */
+
+
+  background: #D39844;
+  border-radius: 5px;
+  /* padding: 7px; */
+  /* margin-right: auto;
+  margin-left: auto; */
+  /* width: 418px;
+  height: 257px; */
+  }
+
+  .card_conteudo_2{
+    grid-area: leftSide; 
+    margin-right: 43px;
+    margin-left: 42px;
+    /* width: 584px; */
+    /* height: 673px; */
+
+  
+    background: #D39844;
+    border-radius: 5px;
+    /* padding: 7px; */
+    /* margin-right: auto;
+    margin-left: auto; */
+    /* width: 418px;
+    height: 257px; */
+    }
+
+  .box_img_1{
+    float: right  ;
+    /* margin-left: auto; */
+    margin-right: 74px;
+    height: 746px;
+    display: block;
+  }
+  .box_img_2{
+    float: left  ;
+    /* margin-left: auto; */
+    margin-left: 85px;
+    margin-right: 74px;
+    height: 746px;
+    display: block
+  }
+  
+  .box_img1 .box_img2{
+    margin: 8px 36px 8px 36px ;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /*  */
+    /* width: 317px;
+    height: 280px; */
+  }
+  .conteudo_principal_imagem{
+    /* width: 598px; */
+    /* width: 719px; */
+    margin-bottom: 38px;
+  }
+  .conteudo_secundario_paragrafo{
+    font-size: 32px;
+  }
+  .conteudo_principal_escrito_subtitulo{
+    font-size: 36px;
+    margin-bottom: 103px;
+  }
+}
+
+@media (max-width: 375px) {
+  .conteudo_pagina{
+    margin-top: 6px;
+  }
+
+  .conteudo_principal_imagem{
+    width: 300px;
+  }
+  /* .card_conteudo_1{
+    height: 400px;
+  }
+
+  .card_conteudo_2{
+    height: 400px;
+  } */
+
+  .card_titulo_2 .titulo{
+    font-size: 20px;
+  }
+
+  .card_titulo_2{
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .conteudo_principal_escrito_subtitulo{
+    font-size: 18px;
+  }
+
+  .conteudo_secundario_paragrafo{
+    font-size: 13px;
+  }
+
+  .card_conteudo_1{
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .card_conteudo_2{
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 320px) {
+  .conteudo_pagina{
+    margin-top: 4px;
+  }
+
+  .conteudo_principal_imagem{
+    width: 250px;
+  }
+  /* .card_conteudo_1{
+    height: 400px;
+  }
+
+  .card_conteudo_2{
+    height: 400px;
+  } */
+
+  .card_titulo_2 .titulo{
+    font-size: 20px;
+  }
+
+  .card_titulo_2{
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .conteudo_principal_escrito_subtitulo{
+    font-size: 13px;
+  }
+
+  .conteudo_secundario_paragrafo{
+    font-size: 12px;
+  }
+
+  .card_conteudo_1{
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .card_conteudo_2{
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+
+
+/*..............................*/
+/*@media (min-width: 800px) {
+  .mobile {
+    display: none;
+    
+  }
+
+  .desktop {
+      display: flex;
+  }
+}
+
+@media (max-width: 800px) {
+  .mobile {
+    display: flex;
+    
+  }
+
+  .desktop {
+      display: none;
+  }
+}
+
+.card_titulo_desktop {
+width: 385px;
+height: 71px;
+flex-shrink: 0;
+border-radius: 50px;
+background: #F4D9B2;
+text-align: center  ;
+}
+
+.titulo_desktop{
+text-align: center;
+height: 100%;
+width: 100% ;
+font-size: 100%;
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div className={styles.container}>
+                        <div className={styles.gallery_wrapper}>
+                            <div className={styles.gallery}>
+                            <div className={styles.vidio} id="slide_1">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/gfOaMKVdj8I?si=_arwv3F1KVLjT8ng" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>      
+                            <div className={styles.vidio} id="slide_2">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/blvkJBAcGY0?si=xRuj2ifewE-jp9ED" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
+                            <div className={styles.vidio} id="slide_3">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/3AwJcboWMhU?si=uy9MyBXnzdQh8kd0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
+                            <div className={styles.vidio} id="slide_4">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/3AwJcboWMhU?si=uy9MyBXnzdQh8kd0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
+                            <div className={styles.vidio} id="slide_5">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/2F528zFXesU?si=kbmJ6xR_bK_9d6MG" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
+                            <div className={styles.vidio} id="slide_6">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/TdMz7EMKBdY?si=ADCYIN9x4xc2RqXw" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
+                            <div className={styles.vidio} id="slide_7">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/PZG1ax_i8PI?si=7LOpdgUcYN58Q7sk" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
+                            <div className={styles.vidio} id="slide_8">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/7iYo5MnOayc?si=EERxG5Kw-tKckGZt" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
+                            <div className={styles.vidio} id="slide_9">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/MuU_I9cysKc?si=0VG6ECt1UmUpPsCY" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
+                            <div className={styles.vidio} id="slide_10">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/RkLAryD1xRU?si=0S5vxGSy4DQm3pf4" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
+                            {/* <div className={styles.vidio} id="slide_11">
+                            </div>
+                            <div className={styles.vidio} id="slide_12">
+                            </div>
+                            <div className={styles.vidio} id="slide_13">
+                            </div> */}
+                            {/* <img id="slide_2" src="https://source.unsplash.com/random/250x250/?animal" alt="Animal Image" className={`${styles.item} ${styles.current_item}`}/>
+                            <img id="slide_3" src="https://source.unsplash.com/random/250x250/?street" alt="Street Image" className={`${styles.item} ${styles.current_item}`}/>
+                            <img id="slide_4" src="https://source.unsplash.com/random/250x250/?zoo" alt="Zoo Image" className={`${styles.item} ${styles.current_item}`}/>
+                            <img id="slide_5"src="https://source.unsplash.com/random/250x250/?zoo" alt="Model Image" className={`${styles.item} ${styles.current_item}`}/> */}
+                            </div>
+                            <div className={styles.slide_nav}>
+                                <a href="#slide_1"></a>
+                                <a href="#slide_2"></a>
+                                <a href="#slide_3"></a>
+                                <a href="#slide_4"></a>
+                                <a href="#slide_5"></a>
+                                <a href="#slide_6"></a>
+                                <a href="#slide_7"></a>
+                                <a href="#slide_8"></a>
+                                <a href="#slide_9"></a>
+                                <a href="#slide_10"></a>
+                                {/* <a href="#slide_11"></a>
+                                <a href="#slide_12"></a>
+                                <a href="#slide_13"></a> */}
+                            </div>
+                        </div>  
+                    </div>

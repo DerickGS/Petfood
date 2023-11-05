@@ -1,0 +1,205 @@
+.desktop {
+    background: #F4D9B2;
+    align-items: center;
+    /*border: 1px solid #aaa;*/
+    display: none;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.desktop a {
+    color: rgb(0, 0, 0);
+}
+
+.mobile {
+    position: relative;
+}
+
+.desktop_options {
+    display: flex;
+    gap: 2rem;
+}
+/*detalhes*/
+header{
+    align-items: center;
+    height: 8rem;
+    background: #F4D9B2;
+    color: black;
+}
+
+button{
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    color: black;   
+    width: 94px;
+    height: 95px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+/*detalhes*/
+
+.logo{
+    width: 94px;
+    height: 95px;
+    border-radius: 50px;
+}
+
+.logo_desktop{
+    width: 128px;
+    height: 129px;
+    border-radius: 100px;  
+}
+
+.mobile .menu {
+    /*border: 1px solid #aaa;*/
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+
+.menu{
+    text-align: center;
+}
+
+.menu h1 {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    line-height: 20px;
+}
+
+.options {
+    position: absolute;
+    top: 5.5rem;
+    width: 10rem; 
+    /*border: 1px solid #aaa;*/
+    background-color: #FFDCA7;
+    transition: translate .3s; 
+    translate: -100%; 
+}   
+
+.options nav {
+    display: flex;
+    flex-direction: column;
+    padding: 6px;
+}
+
+.options.open {
+    translate: 0;
+    border-radius: 3%;
+    box-shadow:10px 5px 5px #aaaaaa45;
+}
+
+/* _feio_ */
+.button_options {
+    padding: 2px;
+    border-radius: 5px;
+    background-color: #D39844;
+    margin: 5px;
+    text-align: center;
+}
+
+.desktop .button_options {
+    padding:  12px 22px 12px 22px;
+    border-radius: 20px;
+}
+
+@media (min-width: 800px) {
+    .mobile {
+        display: none;
+    }
+
+    .desktop {
+        display: flex;
+    }
+
+
+}
+
+@media (max-width: 375px) {
+    button{
+        width: 32px;
+        height: 32px;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    .menu   h1{
+        font-size: 28px;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    .logo{
+        width: 64px;
+        height: 64px;
+        margin-top: auto;
+        margin-bottom: auto;
+        line-height: 20px;
+    }
+    header{
+        height: 6rem;
+    }
+}
+
+@media (max-width: 425px) {
+    button{
+        width: 64px;
+        height: 64px;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    .menu  h1{
+        font-size: 28px;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    .logo{
+        width: 64px;
+        height: 64px;
+        margin-top: auto;
+        margin-bottom: auto;
+        line-height: 20px;
+    }
+    header{
+        height: 6rem;
+    }
+}
+@media (max-width: 860px){
+    
+    /* .logo{
+        width: 48px;
+        height: 48px;
+        margin-top: auto;
+        margin-bottom: auto;
+        line-height: 20px;
+    } */
+    .desktop_options{
+        gap: 1rem;
+    }
+    .desktop .button_options {
+        padding:  12px 22px 12px 22px;
+        border-radius: 20px;
+        font-size: 15px;
+    }
+    /* header{
+        height: 4rem;
+    } */
+
+    .desktop button{
+        width: 48px;
+        height: 48px;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+}
