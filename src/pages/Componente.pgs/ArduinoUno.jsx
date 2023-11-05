@@ -1,5 +1,7 @@
 import Arduino_Uno from "../../img/Arduino Uno.png"
 
+import {ArrowLeft} from "@phosphor-icons/react"
+import { Link } from "react-router-dom"
 import styles from "./Componentes_geral.module.css"
 import Header from "../../components/Header"
 
@@ -18,6 +20,7 @@ return (
                 </div>
                 <section className={styles.conteudo}>
                     <div  className={styles.card_conteudo}>
+                    <Link className={styles.button_options} to={"/Componentes"}> <ArrowLeft size={32} /></Link>
                         <div className={styles.box_img}>
                             <img className={styles.conteudo_principal_imagem} src={Arduino_Uno} alt="Imagem do projeto" />  
                         </div>
@@ -35,6 +38,7 @@ Noprojeto utilizamos do arduino para controlar os sensores e módulos a fim de a
                 </div>
                 <section className={styles.conteudo}>
                     <div  className={styles.card_conteudo}>
+                    <Link className={styles.button_options} to={"/Componentes"}> <ArrowLeft size={32} /></Link>
                         <div className={styles.box_img}>
                             <img className={styles.conteudo_principal_imagem} src={Arduino_Uno} alt="Imagem do projeto" />  
                         </div>

@@ -43,12 +43,12 @@ return (
                 </Link>                    
                 </div>
 
-                <div className={styles.card_componente}>
+                {/* <div className={styles.card_componente}>
                 <Link className={styles.button_options} to={"/ModuloBluetooth"}>
                     <img src={bluetooth} alt="bluetooth" className={styles.img_componente}/>
                     <p>Modulo Bluetooth</p>
                 </Link>
-                </div>
+                </div> */}
 
                 <div className={styles.card_componente}>
                 <Link className={styles.button_options} to={"/BombaDágua"}>

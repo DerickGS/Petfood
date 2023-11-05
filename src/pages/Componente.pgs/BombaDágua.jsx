@@ -1,5 +1,7 @@
 import Componente from "../../img/bomba da água.png"
 
+import {ArrowLeft} from "@phosphor-icons/react"
+import { Link } from "react-router-dom"
 import styles from "./Componentes_geral.module.css"
 import Header from "../../components/Header"
 
@@ -18,6 +20,7 @@ return (
                 </div>
                 <section className={styles.conteudo}>
                     <div  className={styles.card_conteudo}>
+                    <Link className={styles.button_options} to={"/Componentes"}> <ArrowLeft size={32} /></Link>
                         <div className={styles.box_img}>
                             <img className={styles.conteudo_principal_imagem} src={Componente} alt="Imagem do projeto" />  
                         </div>
@@ -36,6 +39,7 @@ Quando acionada, a Mini Bomba de Água é a responsável pela impulsão da água
                 </div>
                 <section className={styles.conteudo}>
                     <div  className={styles.card_conteudo}>
+                    <Link className={styles.button_options} to={"/Componentes"}> <ArrowLeft size={32} /></Link>
                         <div className={styles.box_img}>
                             <img className={styles.conteudo_principal_imagem} src={Componente} alt="Imagem do projeto" />  
                         </div>

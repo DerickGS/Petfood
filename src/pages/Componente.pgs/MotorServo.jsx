@@ -1,5 +1,7 @@
 import Componente from "../../img/motor servo.png"
 
+import {ArrowLeft} from "@phosphor-icons/react"
+import { Link } from "react-router-dom"
 import styles from "./Componentes_geral.module.css"
 import Header from "../../components/Header"
 
@@ -18,6 +20,7 @@ return (
                 </div>
                 <section className={styles.conteudo}>
                     <div  className={styles.card_conteudo}>
+                    <Link className={styles.button_options} to={"/Componentes"}> <ArrowLeft size={32} /></Link>
                         <div className={styles.box_img}>
                             <img className={styles.conteudo_principal_imagem} src={Componente} alt="Imagem do projeto" />  
                         </div>
@@ -35,6 +38,7 @@ Os servos CC (corrente contínua) são formados basicamente por um pequeno motor
                 </div>
                 <section className={styles.conteudo}>
                     <div  className={styles.card_conteudo}>
+                    <Link className={styles.button_options} to={"/Componentes"}> <ArrowLeft size={32} /></Link>
                         <div className={styles.box_img}>
                             <img className={styles.conteudo_principal_imagem} src={Componente} alt="Imagem do projeto" />  
                         </div>

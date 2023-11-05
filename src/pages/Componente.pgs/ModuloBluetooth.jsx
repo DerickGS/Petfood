@@ -1,5 +1,8 @@
 import Componente from "../../img/bluetooth.png"
 
+
+import {ArrowLeft} from "@phosphor-icons/react"
+import { Link } from "react-router-dom"
 import styles from "./Componentes_geral.module.css"
 import Header from "../../components/Header"
 
@@ -18,6 +21,7 @@ return (
                 </div>
                 <section className={styles.conteudo}>
                     <div  className={styles.card_conteudo}>
+                    <Link className={styles.button_options} to={"/Componentes"}> <ArrowLeft size={32} /></Link>
                         <div className={styles.box_img}>
                             <img className={styles.conteudo_principal_imagem} src={Componente} alt="Imagem do projeto" />  
                         </div>
@@ -35,6 +39,7 @@ No projeto utilizamos do módulo bluettoth para fazer conexão direta do arduino
                 </div>
                 <section className={styles.conteudo}>
                     <div  className={styles.card_conteudo}>
+                    <Link className={styles.button_options} to={"/Componentes"}> <ArrowLeft size={32} /></Link>
                         <div className={styles.box_img}>
                             <img className={styles.conteudo_principal_imagem} src={Componente} alt="Imagem do projeto" />  
                         </div>

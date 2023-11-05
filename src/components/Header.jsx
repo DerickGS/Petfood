@@ -40,7 +40,7 @@ return (
             <div className={`${styles.options} ${abrirMenu === true && styles.open}`}>
                 <nav>
                 <Link className={styles.button_options} to={"/Inicio"}>Inicio</Link>
-                <Link className={styles.button_options} to={"/Aplicativo"}>Aplicativo</Link>
+                {/* <Link className={styles.button_options} to={"/Aplicativo"}>Aplicativo</Link> */}
                 <Link className={styles.button_options} to={"/Componentes"}>Componentes</Link>
                 <Link className={styles.button_options} to={"/Artigos"}>Artigos</Link>
                 <Link className={styles.button_options} to={"/Criadores"}>Criadores</Link>
@@ -55,7 +55,7 @@ return (
             <div>
                 <nav className={styles.desktop_options}>
                 <Link className={styles.button_options} to={"/Inicio"}>Inicio</Link>
-                <Link className={styles.button_options} to={"/Aplicativo"}>Aplicativo</Link>
+                {/* <Link className={styles.button_options} to={"/Aplicativo"}>Aplicativo</Link> */}
                 <Link className={styles.button_options} to={"/Componentes"}>Componentes</Link>
                 <Link className={styles.button_options} to={"/Artigos"}>Artigos</Link>
                 <Link className={styles.button_options} to={"/Criadores"}>Criadores</Link>
